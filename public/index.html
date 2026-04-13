@@ -41,7 +41,7 @@
       <button type="button" id="run">Run benchmark</button>
       <span id="status"></span>
     </p>
-    <pre id="out">Click “Run benchmark” to call <code>/api/stats</code>.</pre>
+    <pre id="out">Click “Run benchmark” to call <code>/api</code> (Python <code>api/index.py</code>).</pre>
     <p>
       Local tests: <code>python -m unittest test_module -v</code>
     </p>
@@ -52,7 +52,7 @@
         status.textContent = "Loading…";
         out.textContent = "";
         try {
-          const r = await fetch("/api/stats");
+          const r = await fetch("/api");
           const data = await r.json();
           if (!data.ok) {
             out.innerHTML = '<span class="err">' + (data.error || "Error") + "</span>";
