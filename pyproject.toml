@@ -1,0 +1,10 @@
+[project]
+name = "rock-paper-scissors"
+version = "1.0.0"
+description = "Rock Paper Scissors ML Challenge"
+requires-python = ">=3.9"
+dependencies = []
+
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
